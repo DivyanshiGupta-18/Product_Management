@@ -1,0 +1,83 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid #dfee08d3;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: #eee4e4;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+}
+
+.pagination {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+span {
+  color: rgba(13, 150, 138, 0.795);
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .controls button {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+}
