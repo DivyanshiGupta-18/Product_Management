@@ -1,81 +1,98 @@
-📦 Product Management App (React)
 
-A Product Management Application built using React.js that allows users to view, search, add, edit, and manage products efficiently.
-The application supports List View and Card View, real-time search with debounce, pagination, and form validation — all handled in memory (no backend).
+---
 
-✨ Features
-🔁 Product List Display
+# 📦 Product Management App (React)
 
-Displays products in:
+A **Product Management Application** built using **React.js** that allows users to view, search, add, edit, and manage products efficiently.
+The application supports **List View** and **Card View**, real-time search with debounce, pagination, and form validation — all handled **in memory** (no backend).
 
-List View (Table format)
+---
 
-Card View (Grid layout)
+## 🔗 Live Demo & Source Code
 
-Toggle button to switch between List View ↔ Card View
+* 🚀 **Live Demo:**
+  [https://product-management-black.vercel.app/](https://product-management-black.vercel.app/)
 
-🔍 Search Functionality
+* 💻 **GitHub Repository:**
+  [https://github.com/DivyanshiGupta-18/Product_Management](https://github.com/DivyanshiGupta-18/Product_Management)
 
-Search products by product name
+---
 
-Real-time search
+## ✨ Features
 
-Implemented using 500ms debounce to reduce unnecessary re-renders
+### 🔁 Product List Display
 
-➕ Add & ✏️ Edit Product
+* Displays products in:
 
-Product form fields:
+  * **List View** (Table format)
+  * **Card View** (Grid layout)
+* Toggle button to switch between **List View ↔ Card View**
 
-Name (required)
+---
 
-Price (number, required)
+### 🔍 Search Functionality
 
-Category (required)
+* Search products **by product name**
+* **Real-time search**
+* Implemented using **500ms debounce**
 
-Stock (number)
+---
 
-Description (optional)
+### ➕ Add & ✏️ Edit Product
 
-Image URL (optional)
+* Product form fields:
 
-Basic form validation with error messages
+  * **Name** (required)
+  * **Price** (number, required)
+  * **Category** (required)
+  * **Stock** (number)
+  * **Description** (optional)
+  * **Image URL** (optional)
+* **Basic form validation** with error messages
+* Product data is stored and updated using **React state (in memory only)**
 
-Product data is stored and updated using React state (in memory only)
+---
 
-📄 Pagination
+### 📄 Pagination
 
-Pagination implemented for the product list
+* Pagination implemented for the product list
+* Works in **both List View and Card View**
+* Includes:
 
-Works in both List View and Card View
+  * Previous / Next buttons
+  * Current page indicator
 
-Includes:
+---
 
-Previous / Next buttons
+## 🖼️ Screenshots
 
-Current page indicator
+### 📋 List View
 
-🖼️ Screenshots
-📋 List View
+![List View](./public/list-view.png)
 
-🧱 Card View
+### 🧱 Card View
 
-ℹ️ Image Handling
+![Card View](./public/card-view.png)
 
-If an image URL is provided, it is displayed in Card View
+> ℹ️ **Image Handling**
+>
+> * If an image URL is provided, it is displayed in **Card View**
+> * If no image is provided or the image fails to load, a **default image** is shown
 
-If no image is provided or the image fails to load, a default image is shown
+---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-React.js
+* **React.js**
+* **JavaScript (ES6+)**
+* **HTML5**
+* **CSS3**
 
-JavaScript (ES6+)
+---
 
-HTML5
+## 📁 Project Structure
 
-CSS3
-
-📁 Project Structure
+```
 product-management/
 │
 ├── src/
@@ -84,38 +101,47 @@ product-management/
 │   │   ├── Dummydata.jsx
 │   │   ├── Product.css
 │   │
+│   │
 │   ├── App.jsx
 │   ├── index.js
-│   └── Apps.css
+│   └── App.css
 │
 ├── screenshots/
-│   ├── public\screencapture-localhost-5173-2026-01-04-18_02_49.png
-│   └── public\screencapture-localhost-5173-2026-01-04-18_04_02.png
+│   ├── list-view.png
+│   └── card-view.png
 │
 └── README.md
+```
 
-🚀 How to Run the Project
+---
 
-Clone the repository
+## 🚀 How to Run the Project Locally
 
-git clone <repository-url>
+1. Clone the repository
 
+   ```bash
+   git clone https://github.com/DivyanshiGupta-18/Product_Management.git
+   ```
+2. Navigate to project folder
 
-Install dependencies
+   ```bash
+   cd Product_Management
+   ```
+3. Install dependencies
 
-npm install
+   ```bash
+   npm install
+   ```
+4. Start the development server
 
+   ```bash
+   npm start
+   ```
+5. Open in browser
 
-Start the development server
+   ```
+   http://localhost:3000
+   ```
 
-npm start
+---
 
-
-Open in browser
-
-http://localhost:3000
-
-
-👩‍💻 Author
-
-Divyanshi Gupta
